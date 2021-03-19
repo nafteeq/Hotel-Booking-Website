@@ -1,14 +1,33 @@
 <html>
     <head>
         <title>Detail</title>
+        <style>
+            html,body{
+                 height:100%;
+                 width:100%;
+                 margin:0
+             }
+             #image{
+                 width:60px;
+                 height:60px;
+             }
+             #radImg {
+                 width: 500px;;
+                 height: 500px;
+             }
+             #SocialImages {
+                 width: 22px;;
+                 height: 20px;
+             }
+         </style>
     </head>
     <body>
         <Header>
-            <a href ="index.html" target=_self><img src="assests/images/logo.png" alt="logo" width="150" height ="100"></a>
+            <a href ="index.html" target=_self><img id="image" src="assests/images/logo.png" alt="logo" width="150" height ="100"></a>
             <a href = "/login.html" target = "_blank">Login</a>
         </Header>
         <div>
-            <img src='https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg'><br>
+            <img id="radImg" src='https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg'><br>
             
             <form action="payment.html">
                 <label for="adult">Adults:</label>
@@ -54,9 +73,9 @@
         </div>
         <footer>
             <a href = "/contact.html" target = "_blank">Contact Us</a><br>
-            <img src = "assests/images/facebook.png" width ="22" height = "20">
-            <img src = "assests/images/instagram.png" width ="22" height = "20">
-            <img src = "assests/images/twitter.png" width ="22" height = "20">
+            <img id="SocailImage" src = "assests/images/facebook.png" width ="22" height = "20">
+            <img id="SocailImage" src = "assests/images/instagram.png" width ="22" height = "20">
+            <img id="SocailImage" src = "assests/images/twitter.png" width ="22" height = "20">
             <p>© 2020 ROOM SEARCH PVT.LTD</p>
         </footer>
     </body>
