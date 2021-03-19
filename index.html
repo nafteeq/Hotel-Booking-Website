@@ -6,15 +6,37 @@
            html,body{
                 height:100%;
                 width:100%;
-                margin:0
+                margin:0;
             }
+            body{
+                 background-color:#e0e0e0;  
+             }
+             Header,Footer{
+                 background-color: rosybrown;
+             }
             #image{
                 width:60px;
                 height:60px;
             }
+            .searchImg{
+                background-image: url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 380px;
+            }
             #bImage {
+                /* display: flex;
+                flex-direction: column;
+                flex-wrap:wrap; */
                 width: 150px;;
                 height: 150px;
+                padding: 4%;
+                border-radius: 20%;
+            }
+            .card{
+                margin: 0 10%;
+                padding: 4%;
             }
             #SocialImages {
                 width: 22px;;
@@ -27,14 +49,19 @@
             <img src="assests/images/logo.png" id="image" alt="logo">
             <a href = "login.html">Login</a>
         </Header>
-        <div>
-            <input type="text" placeholder="city"><br>
-            <a href = "list.html"><img id="bImage" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg"></a>
-            <img id="bImage" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg">
-            <img id="bImage" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg">
-            <img id="bImage" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"><br>
-            <a href="index.html">View more>></a>   
-        </div>
+        
+            <div class="searchImg">
+                <!-- <img src="https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg"> -->
+                <input type="text" placeholder="city"><br>
+            </div>
+            <div class="card">
+                <a href = "list.html"><img id="bImage" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg"></a>
+                <img id="bImage" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg">
+                <img id="bImage" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg">
+                <img id="bImage" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"><br>
+            </div>
+            <a href="index.html">View more>></a>
+        
         <footer>
             <a href = "contact.html" target=_self>Contact Us</a><br>
             <img id="SocailImage" src = "assests/images/facebook.png" width ="22" height = "20">
